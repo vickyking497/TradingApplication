@@ -21,6 +21,12 @@ services:
         fromService:
           type: web
           property: port
+      - key: STRIPE_API_KEY
+        sync: false
+      - key: RAZORPAY_API_KEY
+        sync: false
+      - key: RAZORPAY_API_SECRET
+        sync: false
     databases:
       - name: trading-db
         databaseName: trading
